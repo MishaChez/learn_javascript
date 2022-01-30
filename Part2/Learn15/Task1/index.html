@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn15_task1</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    let age = +prompt('Ваш возраст', '');
+
+    function checkAge(age) {
+        return (age > 18) ? true : confirm('Родители разрешили?');
+    }
+
+    let result = checkAge(age);
+    alert(result);
+
+</script>
+</body>
+</html>
