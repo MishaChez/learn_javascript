@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn2_task4</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    function randomInteger(min, max) {
+
+        let Integer = (Math.random() * (max - min + 1) + min - 0.5);
+
+        Integer = Math.round(Integer);
+
+        alert(Integer);
+    }
+
+    randomInteger((+prompt('Введите min', '1')), (+prompt('Введите max', '5')))
+</script>
+</body>
+</html>

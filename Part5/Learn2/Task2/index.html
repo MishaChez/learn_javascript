@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn2_task2</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    function readNumber() {
+        for (; ;) {
+            let num = prompt('Введите число', '0');
+            if (num === '') num = null;
+            if (isFinite(+num)) {
+                alert(`Число: ${num}`);
+                break;
+            }
+        }
+    }
+
+    readNumber();
+
+</script>
+</body>
+</html>
