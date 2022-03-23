@@ -13,14 +13,13 @@
             let num = prompt('Введите число', '0');
             if (num === '') num = null;
             if (isFinite(+num)) {
-                alert(`Число: ${num}`);
+                return num;
                 break;
             }
         }
     }
 
-    readNumber();
-
+    alert(`Число: ${readNumber()}`);
 </script>
 </body>
 </html>
